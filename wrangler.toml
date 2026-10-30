@@ -1,0 +1,10 @@
+name = "quad-pong-multiplayer"
+main = "quad_pong_worker.js"
+compatibility_date = "2026-10-30"
+
+[durable_objects]
+bindings = [{ name = "QUAD_PONG_ROOMS", class_name = "QuadPongRoom" }]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["QuadPongRoom"]
